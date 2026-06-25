@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prueba Police"
+  short_description: "Audit Confluence data-domain docs"
+  default_prompt: "Use $prueba-police to audit the Data Documentation pages in Confluence and summarize missing sections by engine."
