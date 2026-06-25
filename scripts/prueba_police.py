@@ -661,7 +661,7 @@ def build_audit_report(cm: Any, args: argparse.Namespace, grouped_pages: list[tu
 
 def render_markdown_audit(report: dict[str, Any]) -> str:
     lines = [
-        "# Prueba Police Audit",
+        "# Project Docs Health Monitor Audit",
         "",
         f"- Route: {report['route']}",
         f"- Pages scanned: {report['pages_scanned']}",
@@ -773,7 +773,7 @@ def build_alignment_report(cm: Any, client: Any, args: argparse.Namespace, group
 
 def render_markdown_alignment(report: dict[str, Any]) -> str:
     lines = [
-        "# Prueba Police Alignment",
+        "# Project Docs Health Monitor Alignment",
         "",
         f"- Mode: {report['mode'].upper()}",
         f"- Route: {report['route']}",

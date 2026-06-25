@@ -1,40 +1,57 @@
-# Documentation Quality Police Skill
+# Project Docs Health Monitor
 
 ![Status](https://img.shields.io/badge/status-showcase_ready-2ea44f)
-![Domain](https://img.shields.io/badge/domain-data_documentation_quality-0969da)
+![Domain](https://img.shields.io/badge/domain-project_documentation_governance-0969da)
 ![Stack](https://img.shields.io/badge/stack-python_%7C_confluence_api_%7C_quality_rules-6f42c1)
 
-A focused documentation audit skill for analytics data-source pages. It checks whether documentation is complete, fresh, structured, and useful enough for analysts, engineers, and stakeholders to trust.
+A Confluence documentation health monitor built to help a project team stay aligned, current, and accountable. It audits project documentation, flags stale or incomplete pages, checks template coverage, and produces a clear action list for documentation owners.
 
 ## Why It Matters
 
-Data teams often have dashboards, pipelines, and documentation living at different quality levels. This skill turns documentation review into an operational check: each page receives a status, missing sections, weak sections, notes, and a practical next action.
+In cross-functional analytics projects, documentation can become outdated faster than the actual delivery work. Requirements, data-source notes, business logic, ownership, and implementation details often live across multiple Confluence pages, making it hard to know whether the team is working from the latest version of the truth.
 
-| Business value | Technical value |
+This skill was created to turn documentation maintenance into a repeatable operational check.
+
+| Team need | What the monitor provides |
 | --- | --- |
-| Better trust in analytics assets | Template-based audit engine for data-source pages |
-| Faster remediation planning | Status classification and missing-section detection |
-| Clear governance across media or data domains | Engine-level grouping and structured outputs |
-| Safer documentation updates | Preview-first alignment workflow |
+| Know whether project documentation is up to date | Freshness and completeness checks |
+| Keep pages aligned with a shared template | Required-section validation |
+| Reduce manual review effort | Automated Confluence audit workflow |
+| Make follow-up actionable | Status, missing sections, weak sections, and next action |
+| Avoid risky bulk edits | Preview-first alignment workflow |
+
+## Real Use Case
+
+I built this to make sure the team I was working with stayed on top of the project documentation. The goal was not just to "clean pages", but to create visibility: which pages were complete, which were outdated, which were missing key sections, and where documentation owners needed to act.
+
+```mermaid
+flowchart LR
+    A["Project documentation space"] --> B["Confluence inventory"]
+    B --> C["Template and freshness audit"]
+    C --> D["Status classification"]
+    D --> E["Missing-section report"]
+    E --> F["Actionable team follow-up"]
+```
 
 ## What It Can Do
 
-- Audit documentation pages grouped by business engine or domain.
+- Audit Confluence pages grouped by workstream, engine, or documentation area.
 - Classify pages as `OK`, `Incomplete`, `Empty`, or `Outdated`.
-- Detect missing or weak template sections.
-- Generate practical next actions for documentation owners.
-- Produce human-readable or JSON output for downstream automation.
+- Detect missing sections, thin content, weak sections, and obsolete markers.
+- Generate human-readable or JSON reports for follow-up workflows.
 - Preview template-alignment updates before applying changes.
+- Preserve useful existing context instead of overwriting pages blindly.
 
-## Audit Model
+## Health Check Model
 
 ```mermaid
 flowchart TD
-    A["Data-source pages"] --> B["Load required template"]
-    B --> C["Check sections and content depth"]
-    C --> D["Detect stale or obsolete markers"]
-    D --> E["Classify status"]
-    E --> F["Report missing sections and next action"]
+    A["Project pages"] --> B["Load documentation standard"]
+    B --> C["Check required sections"]
+    C --> D["Assess content depth"]
+    D --> E["Detect stale signals"]
+    E --> F["Assign health status"]
+    F --> G["Recommend next action"]
 ```
 
 ## Repository Structure
@@ -61,15 +78,16 @@ python3 scripts/prueba_police.py align --dry-run
 
 | Dimension | What it checks |
 | --- | --- |
-| Completeness | Required sections, useful explanations, key fields |
-| Structure | Consistent heading order and template alignment |
-| Freshness | Stale, obsolete, or deprecated content signals |
-| Usefulness | KPIs, joins, grain, mappings, and data logic |
-| Safety | Preview-first updates and preservation of useful context |
+| Freshness | Stale, obsolete, deprecated, or outdated signals |
+| Completeness | Required sections and minimum useful content |
+| Structure | Heading order and template consistency |
+| Usefulness | KPIs, joins, grain, mappings, data logic, and notes |
+| Accountability | Clear status and practical next action |
+| Safety | Preview-first updates and preservation of existing knowledge |
 
 ## Skills Demonstrated
 
-`documentation QA`  -  `Confluence automation`  -  `data governance`  -  `Python scripting`  -  `quality scoring`  -  `structured reporting`  -  `AI operations design`
+`documentation governance` - `Confluence automation` - `project operations` - `Python scripting` - `quality scoring` - `structured reporting` - `team enablement`
 
 ## Security
 

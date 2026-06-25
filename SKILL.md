@@ -1,13 +1,13 @@
 ---
-name: prueba-police
-description: Audit and optionally standardize Confluence documentation in the Analytics Documentation Team Data Documentation branch for Analytics Portal. Use when Codex needs to connect to Confluence with the local secret files, review Paid Media, Owned Media, Earned Media, and Retail Media datasource pages against the required template, summarize status by engine as OK, Incomplete, Empty, or Outdated, list missing sections, or preview and apply template-alignment updates without deleting useful context.
+name: project-docs-health-monitor
+description: Audit and optionally standardize Confluence project documentation so teams can stay current, aligned, and accountable. Use when Codex needs to review pages against a required template, summarize documentation health by workstream, classify pages as OK, Incomplete, Empty, or Outdated, list missing sections, or preview template-alignment updates without deleting useful context.
 ---
 
-# Prueba Police
+# Project Docs Health Monitor
 
 ## Overview
 
-Use this skill to audit the `Data Documentation` branch in Confluence and produce a quick, practical documentation health check by engine. It focuses on template compliance, missing sections, thin pages, stale or obsolete pages, and optional template-alignment updates that preserve useful existing context.
+Use this skill to audit project documentation in Confluence and produce a quick, practical health check by workstream. It focuses on template compliance, missing sections, thin pages, stale or obsolete pages, and optional template-alignment updates that preserve useful existing context.
 
 ## Defaults
 

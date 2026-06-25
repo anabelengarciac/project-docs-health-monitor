@@ -1,4 +1,4 @@
 interface:
-  display_name: "Prueba Police"
-  short_description: "Audit Confluence data-domain docs"
-  default_prompt: "Use $prueba-police to audit the Data Documentation pages in Confluence and summarize missing sections by engine."
+  display_name: "Project Docs Health Monitor"
+  short_description: "Monitor project documentation health"
+  default_prompt: "Use $project-docs-health-monitor to audit project documentation freshness, template coverage, and missing sections by workstream."
