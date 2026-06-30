@@ -1,6 +1,6 @@
 ---
 name: project-docs-health-monitor
-description: Audit and optionally standardize Confluence project documentation so teams can stay current, aligned, and accountable. Use when Codex needs to review pages against a required template, summarize documentation health by workstream, classify pages as OK, Incomplete, Empty, or Outdated, list missing sections, or preview template-alignment updates without deleting useful context.
+description: Audit and optionally standardize Confluence project documentation so teams can stay current, aligned, and accountable. Use when an assistant needs to review pages against a required template, summarize documentation health by workstream, classify pages as OK, Incomplete, Empty, or Outdated, list missing sections, or preview template-alignment updates without deleting useful context.
 ---
 
 # Project Docs Health Monitor

@@ -1,16 +1,18 @@
 # Project Docs Health Monitor
 
-![Status](https://img.shields.io/badge/status-showcase_ready-2ea44f)
+> Helps delivery teams see which project pages are complete, stale, missing ownership, or blocking alignment before documentation debt becomes operational risk.
+
+![Status](https://img.shields.io/badge/status-product_workflow-2ea44f)
 ![Domain](https://img.shields.io/badge/domain-project_documentation_governance-0969da)
 ![Stack](https://img.shields.io/badge/stack-python_%7C_confluence_api_%7C_quality_rules-6f42c1)
 
 A Confluence documentation health monitor built to help a project team stay aligned, current, and accountable. It audits project documentation, flags stale or incomplete pages, checks template coverage, and produces a clear action list for documentation owners.
 
-## Why It Matters
+## Product Impact
 
 In cross-functional analytics projects, documentation can become outdated faster than the actual delivery work. Requirements, data-source notes, business logic, ownership, and implementation details often live across multiple Confluence pages, making it hard to know whether the team is working from the latest version of the truth.
 
-This skill was created to turn documentation maintenance into a repeatable operational check.
+This workflow was created to turn documentation maintenance into a repeatable operational check.
 
 | Team need | What the monitor provides |
 | --- | --- |
@@ -20,7 +22,7 @@ This skill was created to turn documentation maintenance into a repeatable opera
 | Make follow-up actionable | Status, missing sections, weak sections, and next action |
 | Avoid risky bulk edits | Preview-first alignment workflow |
 
-## Real Use Case
+## Functional Flow
 
 I built this to make sure the team I was working with stayed on top of the project documentation. The goal was not just to "clean pages", but to create visibility: which pages were complete, which were outdated, which were missing key sections, and where documentation owners needed to act.
 
@@ -42,7 +44,7 @@ flowchart LR
 - Preview template-alignment updates before applying changes.
 - Preserve useful existing context instead of overwriting pages blindly.
 
-## Health Check Model
+## Workflow Detail
 
 ```mermaid
 flowchart TD
@@ -54,7 +56,7 @@ flowchart TD
     F --> G["Recommend next action"]
 ```
 
-## Repository Structure
+## Code And Installation
 
 ```text
 .
@@ -89,6 +91,6 @@ python3 scripts/prueba_police.py align --dry-run
 
 `documentation governance` - `Confluence automation` - `project operations` - `Python scripting` - `quality scoring` - `structured reporting` - `team enablement`
 
-## Security
+## Public Scope
 
-This is a sanitized showcase repository. It contains no Confluence tokens, tenant details, internal page IDs, or confidential documentation content.
+This public version contains no Confluence tokens, tenant details, internal page IDs, or confidential documentation content.

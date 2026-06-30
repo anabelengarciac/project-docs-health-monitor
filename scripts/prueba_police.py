@@ -513,6 +513,8 @@ def analyze_page(cm: Any, page: dict[str, Any], engine_name: str, stale_days: in
     else:
         status = "OK"
 
+    # Business rule: the status should tell an owner what to do next, not just score a page.
+    # Empty, outdated, and incomplete pages create different delivery risks and follow-ups.
     suggestions: list[str] = []
     if status == "Empty":
         suggestions.append("Rebuild the page from the required template or archive it if the source is no longer needed.")
